@@ -7,6 +7,11 @@ body {
     background-color: hsl(0, 0%, 90%);
 }
 
+.testimonial:hover {
+    scale: 1.01;
+    transition: all 0.1s ease-in-out;
+}
+
 .grid-testimonial {
     display: grid;
     gap: 1.5rem;
@@ -17,13 +22,25 @@ body {
     margin-inline: auto;
 }
 
-@media screen and (min-width: 30rem) {
+@media screen and (min-width: 33em) {
+    .grid-testimonial {
+        grid-template-areas: "one one" "two three" "five five" "four four";
+    }
+}
+
+@media screen and (min-width: 38rem) {
     .grid-testimonial {
         grid-template-areas: "one one" "two five" "three five" "four four";
     }
 }
 
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: 54rem) {
+    .grid-testimonial {
+        grid-template-areas: "one one two" "five five five" "three four four";
+    }
+}
+
+@media screen and (min-width: 75rem) {
     .grid-testimonial {
         grid-template-areas: "one one two five" "three four four five";
     }
