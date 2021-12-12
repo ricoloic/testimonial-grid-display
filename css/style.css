@@ -13,8 +13,20 @@ body {
     grid-auto-columns: 1fr;
     grid-template-areas: "one" "two" "three" "four" "five";
     padding-block: 2rem;
-    width: min(95%, 70rem);
+    width: min(95%, 100rem);
     margin-inline: auto;
+}
+
+@media screen and (min-width: 30rem) {
+    .grid-testimonial {
+        grid-template-areas: "one one" "two five" "three five" "four four";
+    }
+}
+
+@media screen and (min-width: 50rem) {
+    .grid-testimonial {
+        grid-template-areas: "one one two five" "three four four five";
+    }
 }
 
 .testimonial:nth-child(1) {
