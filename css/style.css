@@ -1,0 +1,94 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    /* light gray bg color */
+    background-color: hsl(0, 0%, 90%);
+}
+
+.grid-testimonial {
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas: "one" "two" "three" "four" "five";
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+
+.testimonial:nth-child(1) {
+    grid-area: one;
+}
+
+.testimonial:nth-child(2) {
+    grid-area: two;
+}
+
+.testimonial:nth-child(3) {
+    grid-area: three;
+}
+
+.testimonial:nth-child(4) {
+    grid-area: four;
+}
+
+.testimonial:nth-child(5) {
+    grid-area: five;
+}
+
+.testimonial {
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.name {
+    margin-left: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.position {
+    margin-left: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.bg-purple {
+    background-color: #8e44ad;
+}
+
+.bg-light-gray {
+    background-color: #555a77;
+}
+
+.bg-dark-gray {
+    background-color: #1b1c22;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.color-white {
+    color: #fff;
+}
